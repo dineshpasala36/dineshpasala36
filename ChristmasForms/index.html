@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exclusive Christmas Photography Orders">
+    <title>Exclusive Christmas Photography Orders</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+          font-family: 'Roboto', sans-serif;
+          background: url('https://source.unsplash.com/1600x900/?christmas,holiday,winter') no-repeat center center fixed;
+          background-size: cover;
+          margin: 0;
+          padding: 0;
+          color: #333;
+          position: relative;
+        }
+
+        /* Overlay to make the background less overwhelming */
+        body::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.4);  /* Darken the background to make text stand out */
+          z-index: -1;
+        }
+
+        header {
+          background: rgba(43, 45, 66, 0.85); /* Slight transparency for header */
+          color: #fff;
+          padding: 50px 20px;
+          text-align: center;
+          font-family: 'Playfair Display', serif;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+          font-size: 48px;
+          margin-bottom: 10px;
+          letter-spacing: 1px;
+        }
+
+        header p {
+          font-size: 18px;
+          font-weight: 400;
+        }
+
+        .container {
+          width: 80%;
+          max-width: 900px;
+          margin: 50px auto;
+          padding: 30px;
+          background: #ffffff;
+          border-radius: 15px;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+          text-align: center;
+          font-family: 'Playfair Display', serif;
+          font-size: 32px;
+          color: #2b2d42;
+          margin-bottom: 20px;
+        }
+
+        form {
+          display: flex;
+          flex-direction: column;
+        }
+
+        label {
+          font-weight: 500;
+          margin: 10px 0 5px;
+          font-size: 16px;
+          color: #444;
+        }
+
+        input, select, textarea {
+          font-family: 'Roboto', sans-serif;
+          padding: 12px;
+          border-radius: 8px;
+          border: 1px solid #ccc;
+          margin-bottom: 20px;
+          font-size: 16px;
+          transition: all 0.3s ease;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+          width: auto;
+          margin-right: 10px;
+        }
+
+        input:focus, select:focus, textarea:focus {
+          border-color: #2b2d42;
+          outline: none;
+        }
+
+        button {
+          background: #2b2d42;
+          color: white;
+          padding: 15px;
+          border: none;
+          border-radius: 10px;
+          font-size: 18px;
+          cursor: pointer;
+          transition: background 0.3s ease;
+        }
+
+        button:hover {
+          background: #4b4f69;
+        }
+
+        button:active {
+          background: #6c728c;
+        }
+
+        .form-footer {
+          text-align: center;
+          margin-top: 30px;
+          font-size: 14px;
+          color: #777;
+        }
+
+        .form-footer a {
+          color: #2b2d42;
+          text-decoration: none;
+          font-weight: bold;
+        }
+
+        .form-footer a:hover {
+          color: #4b4f69;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Exclusive Christmas Photography Orders</h1>
+    <p>Make this Christmas memorable with a luxurious photography experience</p>
+</header>
+
+<div class="container">
+    <h2>Order Form</h2>
+    <form action="https://formspree.io/f/{your_form_id}" method="POST">
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" name="name" required placeholder="Enter your full name" aria-required="true">
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email address" aria-required="true">
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number" aria-required="true">
+
+        <label for="photo-type">Select Photo Type</label>
+        <select id="photo-type" name="photo-type" required>
+            <option value="">Select...</option>
+            <option value="Individual Photos">Individual Photos</option>
+            <option value="Family Photos">Family Photos</option>
+            <option value="Couple Photos">Couple Photos</option>
+            <option value="Pets and Family">Pets and Family</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label for="session-date">Preferred Session Date</label>
+        <input type="date" id="session-date" name="session-date" required aria-required="true">
+
+        <label for="time-slot">Preferred Time Slot</label>
+        <input type="time" id="time-slot" name="time-slot" required aria-required="true">
+
+        <label>Would you like to include a Christmas-themed background?</label>
+        <div style="display: flex; align-items: center;">
+            <input type="radio" id="yes" name="christmas-theme" value="Yes">
+            <label for="yes" style="margin-right: 20px;">Yes</label>
+            <input type="radio" id="no" name="christmas-theme" value="No" checked>
+            <label for="no">No</label>
+        </div>
+
+        <label for="message">Special Requests or Notes</label>
+        <textarea id="message" name="message" rows="4" placeholder="Let us know if you have any special requests"></textarea>
+
+        <button type="submit">Submit Order</button>
+    </form>
+
+    <div class="form-footer">
+        <p>Thank you for choosing our exclusive Christmas photography service!</p>
+        <p>For inquiries, <a href="mailto:info@example.com">contact us</a></p>
+    </div>
+</div>
+
+</body>
+</html>
