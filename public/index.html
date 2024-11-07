@@ -35,28 +35,37 @@
             background: rgba(43, 45, 66, 0.85);
             color: #fff;
             padding: 50px 20px;
+            display: flex;
+            justify-content: center; /* Center the entire content horizontally */
+            align-items: center;
+        }
+
+        /* Flex container for header content */
+        .header-content {
+            display: flex;
+            align-items: center; /* Vertically align logo and text */
             text-align: center;
-            font-family: 'Playfair Display', serif;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
 
         /* Logo Styling */
         .logo {
-            width: 120px; /* Adjust the size as needed */
-            height: auto;
-            margin-bottom: 10px;
+            width: 170px; /* Adjust the width as needed */
+            height: auto; /* Keeps the aspect ratio */
+            margin-right: 20px; /* Space between logo and text */
         }
 
-        header h1 {
-            font-size: 48px;
-            margin: 10px 0;
+        /* Styling for the header text */
+        .header-text h1 {
+            font-size: 36px;
+            margin: 5px 0;
             letter-spacing: 1px;
             color: #fff;
         }
 
-        header p {
+        .header-text p {
             font-size: 18px;
             font-weight: 400;
+            margin-top: 5px;
         }
 
         .container {
@@ -162,11 +171,17 @@
 <body>
 
 <header>
-    <!-- Logo Image -->
-    <img src="https://raw.githubusercontent.com/dineshpasala36/snap-scape-studios/4bba850b2d0fb68ca0ae517e8d3090d3cf06cb53/ChristmasForms/Images/SnapScape_Logo.PNG" alt="Snap Scape Studios Logo" class="logo">
-    <h1>Snap Scape Studio</h1>
-    <h1>Exclusive Christmas Photography Orders</h1>
-    <p>Make this Christmas memorable with a luxurious photography experience</p>
+    <div class="header-content">
+        <!-- Logo Image -->
+        <img src="https://raw.githubusercontent.com/dineshpasala36/dineshpasalaphotography/main/ChristmasForms/Images/SnapScape_Logo.PNG" alt="Snap Scape Studios Logo" class="logo">
+
+        <!-- Centered Header Text -->
+        <div class="header-text">
+            <h1>Snap Scape Studio</h1>
+            <h1>Exclusive Christmas Photography Orders</h1>
+            <p>Make this Christmas memorable with a luxurious photography experience</p>
+        </div>
+    </div>
 </header>
 
 <div class="container">
