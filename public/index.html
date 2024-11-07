@@ -204,6 +204,8 @@
         <textarea id="message" name="message" rows="4" placeholder="Let us know if you have any special requests"></textarea>
         <!-- Hidden field for Formspree redirect -->
         <input type="hidden" name="_next" value="https://formspree.io/thanks?language=en" />
+        <input type="hidden" name="_replyto" value="{{email}}" />
+
         <button type="submit">Submit Order</button>
     </form>
 
